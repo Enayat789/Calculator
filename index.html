@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="output">
+        <div class="Title">
+          <h2>CALCULATOR</h2>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <input type="text" name="display" id="display" placeholder="0" />
+      </div>
+
+      <div class="buttons">
+        <button style="color: rgb(43, 237, 190)" onclick="allClear()">
+          AC
+        </button>
+        <button style="color: rgb(43, 237, 190)">+/_</button>
+        <button style="color: rgb(43, 237, 190)" onclick="displayresult('%')">
+          %
+        </button>
+        <button style="color: rgb(224, 77, 83)" onclick="displayresult('/')">
+          /
+        </button>
+        <!-- <br> -->
+        <button onclick="displayresult('7')">7</button>
+        <button onclick="displayresult('8')" id="eight">8</button>
+        <button onclick="displayresult('9')">9</button>
+        <button style="color: rgb(224, 77, 83)" onclick="displayresult('*')">
+          x
+        </button>
+        <button onclick="displayresult('4')">4</button>
+        <button onclick="displayresult('5')">5</button>
+        <button onclick="displayresult('6')">6</button>
+        <button style="color: rgb(224, 77, 83)" onclick="displayresult('-')">
+          -
+        </button>
+        <button onclick="displayresult('1')">1</button>
+        <!-- <button onclick="getTwelve(1)" id="twelve">12</button> -->
+
+        <button onclick="displayresult('2')">2</button>
+        <button onclick="displayresult('3')">3</button>
+        <button style="color: rgb(224, 77, 83)" onclick="displayresult('+')">
+          +
+        </button>
+        <button onclick="displayBack()">DEL</button>
+        <button onclick="displayresult('0')">0</button>
+        <button style="color: rgb(224, 77, 83)" onclick="displayresult('.')">
+          .
+        </button>
+        <button style="color: rgb(224, 77, 83)" onclick="calculate()" id="btn">
+          =
+        </button>
+      </div>
+      <p id="madeBy">made by Enayat...</p>
+    </div>
+  </body>
+  <!-- <script>
+    function getTwelve() {
+      const clickValue = document.getElementById("twelve").innerText ;
+      console.log(clickValue);
+
+    }
+  </script> -->
+  <script src="./script.js"></script>
+</html>
